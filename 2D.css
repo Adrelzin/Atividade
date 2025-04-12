@@ -1,0 +1,164 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.a {
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    animation: translate 3s infinite;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@keyframes translate{
+    0%{
+        transform: translate(0px, 0px)
+    }
+    50%{
+        transform: translate(20px, 20px)
+    }
+    100%{
+        transform: translate(0px, 0px)
+    }
+}
+
+.b{
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(360deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+
+.c{
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    animation: scale 3s infinite;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0, 0)
+    }
+    50%{
+        transform: scale(1, 1)
+    }
+    100%{
+        transform: scale(0, 0)
+    }
+}
+
+.d{
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    animation: skew 3s infinite;
+}
+
+@keyframes skew {
+    0% {
+        transform: skewX(0deg) skewY(0deg);
+    }
+    25% {
+        transform: skewX(20deg) skewY(-20deg);
+    }
+    50% {
+        transform: skewX(-20deg) skewY(20deg);
+    }
+    75% {
+        transform: skewX(20deg) skewY(-20deg);
+    }
+    100% {
+        transform: skewX(0deg) skewY(0deg);
+    }
+}
+.e{
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    animation: matrix 3s infinite;
+}
+
+@keyframes matrix {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0); /* Nenhuma transformação */
+    }
+    25% {
+        transform: matrix(1, 0.5, -0.5, 1, 0, 0); /* Inclinação dinâmica */
+    }
+    50% {
+        transform: matrix(0.8, 0.2, -0.2, 0.8, 0, 0); /* Escala combinada com inclinação */
+    }
+    75% {
+        transform: matrix(1, -0.5, 0.5, 1, 0, 0); /* Inclinação oposta */
+    }
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, 0); /* Retorna ao estado inicial */
+    }
+}
